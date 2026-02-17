@@ -1,0 +1,42 @@
+{
+  "name": "typeassist",
+  "version": "1.0.0",
+  "description": "Virtual Typing Assist - Types preloaded text into any input field via OS-level keystroke simulation",
+  "main": "main.js",
+  "scripts": {
+    "start": "./node_modules/.bin/electron .",
+    "build": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "appId": "com.typeassist.app",
+    "productName": "TypeAssist",
+    "directories": {
+      "output": "dist"
+    },
+    "icon": "icon",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "icon.icns"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "@nut-tree-fork/nut-js": "^4.2.6",
+    "axios": "^1.13.5",
+    "electron-store": "8.2.0",
+    "node-machine-id": "^1.1.12"
+  }
+}
