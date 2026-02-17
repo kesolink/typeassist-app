@@ -22,8 +22,7 @@
       "icon": "icon.ico"
     },
     "mac": {
-      "target": "dmg",
-      "icon": "icon.icns"
+      "target": "dmg"
     },
     "linux": {
       "target": "AppImage"
