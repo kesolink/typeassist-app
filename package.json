@@ -16,7 +16,6 @@
     "directories": {
       "output": "dist"
     },
-    "icon": "icon",
     "win": {
       "target": "nsis"
     },
