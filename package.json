@@ -18,8 +18,7 @@
     },
     "icon": "icon",
     "win": {
-      "target": "nsis",
-      "icon": "icon.ico"
+      "target": "nsis"
     },
     "mac": {
       "target": "dmg"
